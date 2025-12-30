@@ -5,14 +5,14 @@
 API RESTful desenvolvida como PoC para o aplicativo Bola Na Rede, focada em gerenciamento de usuários, verificação em duas etapas de email e 
 autenticação de sessão via JWT.
 
-> =========== Funcionalidades ===========
+## Funcionalidades 
 
 - Registro e autenticação de usuários.
 - Verificação de email com códigos enviados por email.
 - Geração e renovação de tokens JWT para sessões seguras.
 - Endpoints para gerenciamento de partidas e jogadores.
 
-> =========== Libs e Stack utilizadas ===========
+## Libs e Stack utilizadas 
 
 nodemailer - Enviar códigos de verificação para emails na criação da conta.
 bcrypt - Gerar hash a partir de códigos e senhas de acesso antes de enviar ao DB.
@@ -23,10 +23,10 @@ express - Criação e gerenciamento de rotas.
 supbase - Banco de dados e autenticação de usuários.
 nodemon - Reinício automático do servidor durante o desenvolvimento.
 
-> =========== Como rodar a API localmente ===========
+## Como rodar a API localmente 
 
 1. Clone o repositório:
-   git clone https://github.com/dev-pica/API-BolaNaRede.git
+   git clone https://github.com/Mateus-Ca13/API-BolaNaRede.git
    
 2. Navegue até o diretório do projeto:
    cd API-BolaNaRede
@@ -41,7 +41,7 @@ nodemon - Reinício automático do servidor durante o desenvolvimento.
 
 6. A API estará rodando em `http://localhost:8000` por padrão.
 
-> =========== Rotas da API ===========
+## Rotas da API 
 
 - `POST /auth/register`: Registra um novo usuário.
 - `POST /auth//email-token-verify`: Verifica o email do usuário com um código.
@@ -50,4 +50,8 @@ nodemon - Reinício automático do servidor durante o desenvolvimento.
 - `POST /auth//send-email-token`: Envia um código de verificação para o email do usuário.
 - `GET /matches/get-list`: Retorna a lista de partidas disponíveis.
 - `PUT /matches/get-match-players`: Retorna a lista de jogadores da partida.
+
+## Front-end
+
+O front-end do aplicativo Bola Na Rede pode ser encontrado no seguinte repositório: [Repositório do Front-end](https://github.com/Mateus-Ca13/Bola_na_Rede.git)
 
